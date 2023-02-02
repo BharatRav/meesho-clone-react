@@ -1,12 +1,12 @@
 import React from 'react'
-import Header from './HeaderSection/Header';
-import Nav from './HeaderSection/Nav';
+import Header from './HeaderSection/Header'
+import Nav from './HeaderSection/Nav'
 
 const HeaderSection = () => {
   return (
     <div>
-      <Header/>
-      <Nav />
+        <Header />
+        <Nav />
     </div>
   )
 }
