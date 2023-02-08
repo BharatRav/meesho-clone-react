@@ -1,0 +1,25 @@
+input {
+    border-top-style: hidden;
+    border-right-style: hidden;
+    border-left-style: hidden;
+    border-bottom-style: groove;
+    margin: 2px 2px 2px 0;
+    padding: 8px;
+  }
+  
+  .no-outline:focus {
+    outline: none;
+  }
+.header {
+    flex-direction: row;
+    align-items: center;
+}
+  .header__container {
+    flex-direction: row;
+  }
+  .header__search {
+    flex-direction:inherit;
+  }
+  .header__rightSide {
+    flex-direction:inherit;
+  }
