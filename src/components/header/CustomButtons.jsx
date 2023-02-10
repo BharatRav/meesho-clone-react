@@ -42,7 +42,7 @@ const CustomButtons = () => {
                 <PhoneIphoneOutlinedIcon/>
                 <Typography>Download App</Typography>
             </DownloadBox>
-            <Typography style={{marginTop:10,width:140}}>Become a Supplier</Typography>
+            <Typography style={{marginTop:15,width:140}}>Become a Supplier</Typography>
 
             <Userbox>                
                 <PermIdentityOutlinedIcon />
