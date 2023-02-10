@@ -1,11 +1,11 @@
-import { Fragment } from "react";
-import Header from "./components/Header";
+import './App.css';
+import Header from './components/header/Header';
 
 function App() {
   return (
-    <Fragment>
-      <Header />
-    </Fragment>
+    <div className="App">
+    <Header />
+    </div>
   );
 }
 

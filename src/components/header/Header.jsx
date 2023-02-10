@@ -1,0 +1,37 @@
+import React from 'react'
+import {AppBar,Toolbar,Box,styled} from '@mui/material';
+
+import MeeshoLogo from './MeeshoLogo';
+import Search from './Search';
+import CustomButtons from './CustomButtons';
+
+
+//Box is div, AppBar is header,Typography is h,p tags
+
+const HeaderStyled = styled(AppBar)`
+    background:#fff;
+    height: 78px;
+    align-item:center;
+    display: flex;
+`;
+const Component =styled(Box)`
+    margin-left:1%;
+    align-item:center;
+    cursor:pointer;
+`;
+const Header = () => {
+  return (
+    <HeaderStyled>
+        <Toolbar style={{minHeight:45}}>
+            <Component>
+                <MeeshoLogo />
+            </Component>
+            
+            <Search />
+            <CustomButtons />
+        </Toolbar>
+    </HeaderStyled>
+  )
+}
+
+export default Header
