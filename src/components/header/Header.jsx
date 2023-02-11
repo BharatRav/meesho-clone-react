@@ -4,6 +4,7 @@ import {AppBar,Toolbar,Box,styled} from '@mui/material';
 import MeeshoLogo from './MeeshoLogo';
 import Search from './Search';
 import CustomButtons from './CustomButtons';
+import { Link } from 'react-router-dom';
 
 
 //Box is div, AppBar is header,Typography is h,p tags
@@ -24,7 +25,7 @@ const Header = () => {
     <HeaderStyled>
         <Toolbar style={{minHeight:45}}>
             <Component>
-                <MeeshoLogo />
+                <Link  to="/home"><MeeshoLogo /></Link>
             </Component>
             
             <Search />

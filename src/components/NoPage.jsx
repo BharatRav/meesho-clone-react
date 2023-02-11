@@ -2,6 +2,7 @@
 import React from 'react';
 import { Box, Button, Container, Typography } from '@mui/material';
 import Grid from '@mui/material/Grid';
+import { Link } from 'react-router-dom';
 
 const NoPage =() => {
   return (
@@ -25,7 +26,7 @@ const NoPage =() => {
             <Typography variant="h6">
             Sorry for Inconvenience caused.
             </Typography>
-            <Button variant="contained">Back Home</Button>
+            <Button variant="contained"><Link to ="/home">Back Home</Link></Button>
           </Grid>
           <Grid xs={6}>
             <img

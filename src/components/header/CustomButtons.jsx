@@ -3,6 +3,7 @@ import PermIdentityOutlinedIcon from '@mui/icons-material/PermIdentityOutlined';
 import ShoppingCartOutlinedIcon from '@mui/icons-material/ShoppingCartOutlined';
 
 import PhoneIphoneOutlinedIcon from '@mui/icons-material/PhoneIphoneOutlined';
+import Profile from "../Login/profile";
 
 
 const Wrapper =styled(Box)`
@@ -26,7 +27,7 @@ const DownloadBox= styled(Box)`
     display:flex;
     & :hover {
         color:rgb(244,51,151);
-        // border-bottom: 0.2rem solid rgb(244,51,151);
+        border-bottom: 0.2rem solid rgb(244,51,151);
         
        
     }
@@ -34,23 +35,28 @@ const DownloadBox= styled(Box)`
 const Userbox= styled(Box)`
 
     & :hover {
-        color:rgb(244,51,151);
-        border-bottom: 0.2rem solid rgb(244,51,151);
+         color:rgb(244,51,151);
+        //  border-bottom: 0.2rem solid rgb(244,51,151);
     }
+    &: hover .profile-bar{
+        display: block;
+        z-index: 1;
+         background-color: #fff;
+        border-bottom: none;
 `;
 const CustomButtons = () => {
     return (
         <Wrapper>
-        
             <DownloadBox>
                 <PhoneIphoneOutlinedIcon/>
-                <Typography >Download App</Typography>
+                <a href="https://apps.apple.com/us/app/meesho/id1457958492" target="_blank">Download APP</a>
             </DownloadBox>
             <Typography style={{marginTop:15,width:140}}>Become a Supplier</Typography>
 
             <Userbox>                
                 <PermIdentityOutlinedIcon />
                 <Typography>Profile</Typography>
+                <Profile />
             </Userbox>
             <CartContainer>                
                 <ShoppingCartOutlinedIcon />
