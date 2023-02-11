@@ -12,6 +12,7 @@ const Wrapper = styled(Box)`
         color:rgb(244,51,151);
     }
     box-sizing: border-box;
+    //position :fixed;
 `;
 const Text =styled(Typography)`
     font-size:18px;
