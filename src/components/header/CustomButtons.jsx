@@ -26,12 +26,16 @@ const DownloadBox= styled(Box)`
     display:flex;
     & :hover {
         color:rgb(244,51,151);
+        // border-bottom: 0.2rem solid rgb(244,51,151);
+        
+       
     }
 `;
 const Userbox= styled(Box)`
 
     & :hover {
         color:rgb(244,51,151);
+        border-bottom: 0.2rem solid rgb(244,51,151);
     }
 `;
 const CustomButtons = () => {
@@ -40,7 +44,7 @@ const CustomButtons = () => {
         
             <DownloadBox>
                 <PhoneIphoneOutlinedIcon/>
-                <Typography>Download App</Typography>
+                <Typography >Download App</Typography>
             </DownloadBox>
             <Typography style={{marginTop:15,width:140}}>Become a Supplier</Typography>
 

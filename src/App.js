@@ -1,16 +1,23 @@
-import { Box } from '@mui/system';
-import './App.css';
-import Header from './components/header/Header';
+
 import Home from './components/home/Home';
+import { Route, Routes } from 'react-router-dom';
+import './App.css';
+import NoPage from './components/NoPage';
+import Login from './components/Login/Login';
+import SignUp from './components/Login/SignUp';
+
 
 function App() {
   return (
-    <div className="App">
-      <Header />
-      <Box style ={{marginTop:78}}>
-        <Home/>
-      </Box>
-    </div>
+    <>
+      <Routes>
+        <Route  path='/' element ={<Home/>}/>
+        <Route  path='/home' element ={<Home/>}/>
+        <Route path='/login' element ={<Login/>}/>
+        <Route path='/signup' element ={<SignUp/>}/>
+        <Route path='*' element ={<NoPage/>}/>
+      </Routes>
+    </>
   );
 }
 

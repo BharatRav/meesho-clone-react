@@ -1,12 +1,17 @@
 import { Box } from '@mui/material'
 import React from 'react'
 import NavBar from './NavBar'
+import Header from '../header/Header'
 
 const Home = () => {
   return (
-    <Box>
-        <NavBar />
-    </Box>
+    <>
+        <Header />
+        <Box style ={{marginTop:78}}>
+            <NavBar />
+        </Box>
+        
+    </>
   )
 }
 
