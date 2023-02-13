@@ -9,8 +9,8 @@ const Home = () => {
         <Header />
         <Box style ={{marginTop:78}}>
             <NavBar />
-            <img src ="	https://images.meesho.com/images/marketing/1631722939962.webp" alt = "data" style={{width:"100%",height: "5%"}}/>
         </Box>
+        <img src ="	https://images.meesho.com/images/marketing/1631722939962.webp" alt = "data" style={{width:"100%",height: "5%"}}/>
         
     </>
   )

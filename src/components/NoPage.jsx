@@ -26,7 +26,7 @@ const NoPage =() => {
             <Typography variant="h6">
             Sorry for Inconvenience caused.
             </Typography>
-            <Button variant="contained"><Link to ="/home">Back Home</Link></Button>
+            <Button variant="contained"><Link to ="/home">Go Back To Website</Link></Button>
           </Grid>
           <Grid xs={6}>
             <img
